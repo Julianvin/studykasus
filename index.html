@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // nomer4
+      let vga = 20000;
+      let cpu = 60000;
+      let van = 19000;
+      let prsn = 10 / 100;
+      let hsl = vga + cpu + van;
+      let dsc = hsl * prsn;
+
+      if (hsl >= 100000) {
+        console.log(hsl - dsc);
+      } else {
+        console.log(hsl);
+      }
+
+      // nomer5
+      let lmbr = 6;
+
+      if (lmbr < 6) {
+        console.log("gaji Rp.100.000");
+      } else if (lmbr == 6) {
+        console.log("gaji Rp.200.000");
+      } else {
+        console.log("gaji Rp.300.000");
+      }
+
+      // nomer6
+
+      let pa = 520;
+
+      if (pa <= 500) {
+        console.log("Status Aman");
+      } else if (pa >= 500.1 && pa <= 600) {
+        console.log("Status Siaga");
+      } else if (pa >= 600.1 && pa <= 650) {
+        console.log("Status Siaga 2");
+      } else {
+        console.log("status Siaga 1");
+      }
+      for    (let i = 0; i < 40; i++) {
+        console.log(i);
+        document.write (i+"</br")
+      }
+
+      i=5
+      while(i>=1){
+        console.log(i)
+        document.write(i + "</br>")
+        i--
+      }
+    </script>
+  </body>
+</html>
